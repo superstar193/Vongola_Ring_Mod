@@ -3,6 +3,7 @@ package net.toasterkit.vongolaringmod;
 //import net.example.examplemod.Config;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,18 +14,24 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.toasterkit.vongolaringmod.block.ModBlocks;
+import net.toasterkit.vongolaringmod.item.ModCreativeModeTabs;
+import net.toasterkit.vongolaringmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(VolgolaRingMod.MODID)
-public class VolgolaRingMod {
-    // Define mod id in a common place for everything to reference
-    public static final String MODID = "volgolaringmod";
-    // Directly reference a slf4j logger
+@Mod(VongolaRingMod.MODID)
+public class VongolaRingMod {
+    public static final String MODID = "vongolaringmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public VolgolaRingMod(FMLJavaModLoadingContext context) {
+    public VongolaRingMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -52,6 +59,12 @@ public class VolgolaRingMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SAPPHIRE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_SAPPHIRE);
+        }
 
     }
 

@@ -1,0 +1,13 @@
+{
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+
+  "item.vongolaringmod.sapphire": "Sapphire",
+  "item.vongolaringmod.raw_sapphire": "Raw Sapphire",
+
+  "block.vongolaringmod.sapphire_block": "Block of Sapphire",
+  "block.vongolaringmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
+}
