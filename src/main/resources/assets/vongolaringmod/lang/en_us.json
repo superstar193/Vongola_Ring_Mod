@@ -6,8 +6,23 @@
   "item.vongolaringmod.sapphire": "Sapphire",
   "item.vongolaringmod.raw_sapphire": "Raw Sapphire",
 
+  "item.vongolaringmod.metal_detector": "Metal Detector",
+
+  "item.vongolaringmod.strawberry": "Strawberry",
+
+  "item.vongolaringmod.pine_cone": "Pine Cone",
+
   "block.vongolaringmod.sapphire_block": "Block of Sapphire",
   "block.vongolaringmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.vongolaringmod.sound_block": "Sound Block",
+
+  "block.vongolaringmod.sapphire_ore": "Sapphire Ore",
+  "block.vongolaringmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.vongolaringmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.vongolaringmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+
+  "tooltip.vongolaringmod.metal_detector.tooltip": "Finds valuables underground!",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

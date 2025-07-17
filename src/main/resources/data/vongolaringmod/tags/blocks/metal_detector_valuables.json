@@ -1,0 +1,9 @@
+{
+  "values": [
+    "vongolaringmod:sapphire_ore",
+    "vongolaringmod:deepslate_sapphire_ore",
+    "vongolaringmod:nether_sapphire_ore",
+    "vongolaringmod:end_stone_sapphire_ore",
+    "#forge:ores"
+  ]
+}

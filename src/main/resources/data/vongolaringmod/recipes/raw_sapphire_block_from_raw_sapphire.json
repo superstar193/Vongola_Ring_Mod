@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "vongolaringmod:raw_sapphire"
+    }
+  },
+  "result": {
+    "item": "vongolaringmod:raw_sapphire_block"
+  }
+}
