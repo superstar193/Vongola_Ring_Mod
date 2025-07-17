@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "vongolaringmod:block/sapphire_ore"
-  }
-}

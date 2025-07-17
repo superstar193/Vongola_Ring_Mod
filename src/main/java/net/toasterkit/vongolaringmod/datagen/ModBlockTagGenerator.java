@@ -22,7 +22,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
-                .add(ModBlocks.SAPPHIRE_ORE.get()).addTags(Tags.Blocks.ORES);
+                .add(ModBlocks.SAPPHIRE_ORE.get(),
+                        ModBlocks.END_SAPPHIRE_ORE.get(),
+                        ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()).addTags(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SAPPHIRE_ORE.get(),

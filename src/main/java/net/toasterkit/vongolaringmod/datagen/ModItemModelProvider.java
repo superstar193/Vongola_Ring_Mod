@@ -28,7 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-                ResourceLocation.tryParse("item/generated")).texture("Layer0",
-                ResourceLocation.tryBuild(VongolaRingMod.MODID, "item/" + item.getId().getPath()));
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VongolaRingMod.MODID,"item/" + item.getId().getPath()));
     }
 }
