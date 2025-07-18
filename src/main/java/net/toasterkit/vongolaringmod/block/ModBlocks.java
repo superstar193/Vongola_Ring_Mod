@@ -1,23 +1,20 @@
 package net.toasterkit.vongolaringmod.block;
 
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.toasterkit.vongolaringmod.VongolaRingMod;
+import net.toasterkit.vongolaringmod.block.custom.SkyFlame;
+import net.toasterkit.vongolaringmod.block.custom.SkyFlameOld;
 import net.toasterkit.vongolaringmod.block.custom.SoundBlock;
 import net.toasterkit.vongolaringmod.item.ModItems;
 
-import java.rmi.registry.Registry;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -33,6 +30,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> SKY_FLAME_BLOCK = registerBlock("sky_flame",
+            () -> new SkyFlameOld(BlockBehaviour.Properties.copy(Blocks.FIRE).noLootTable()));
 
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",

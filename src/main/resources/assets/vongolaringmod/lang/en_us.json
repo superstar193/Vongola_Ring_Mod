@@ -22,7 +22,11 @@
   "block.vongolaringmod.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.vongolaringmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
 
+  "block.vongolaringmod.sky_flame": "Sky Flames",
+
   "tooltip.vongolaringmod.metal_detector.tooltip": "Finds valuables underground!",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
+
+  "creativetab.v_ring_tab": "Vongola Rings"
 }

@@ -39,6 +39,14 @@ public class ModCreativeModeTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> V_Ring_TAB = CREATIVE_MODE_TABS.register("v_ring_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VONGOLA_SKY_RING.get()))
+                    .title(Component.translatable("creativetab.v_ring_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.VONGOLA_SKY_RING.get());
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

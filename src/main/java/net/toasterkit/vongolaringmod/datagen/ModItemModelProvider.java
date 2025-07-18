@@ -24,6 +24,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.STRAWBERRY);
         simpleItem(ModItems.PINE_CONE);
+
+        simpleItem(ModItems.VONGOLA_SKY_RING);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
